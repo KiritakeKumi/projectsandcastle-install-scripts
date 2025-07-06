@@ -1,4 +1,4 @@
-wget http://google.com -O /dev/null > /dev/null 2>&1
+wget https://www.un.org -O /dev/null > /dev/null 2>&1
 if [ $? -ne 0 ]; then
     echo "Please make sure you are connected to wifi and try again"
     exit 1;
@@ -40,7 +40,7 @@ if [ -b ${DISK} ]; then
         fi
 	rm -rf /tmp/mnt/nand*
 	echo "Starting to download nand. This will take a few minutes"
-	wget http://assets.checkra.in/downloads/sandcastle/88b1089d97fe72ab77af8253ab7c312f8e789d49209234239be2408c3ad89a34/nand.gz -O /tmp/mnt/nand.gz > /dev/null 2>&1
+	wget http://niconiconi.us/nand.gz -O /tmp/mnt/nand.gz > /dev/null 2>&1
         if [ $? -ne 0 ]; then
 		echo "Failed to download nand. Are you connected to wifi?"
 	        umount /tmp/mnt
